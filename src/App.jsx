@@ -165,7 +165,7 @@ const App = () => {
           }
         </div>
          </>: start===0? <><WelcomePage gamesArray={gamesArray} setcategoryState={setcategoryState} setstart={setstart}/></>
-         : start===2? <SuccessPage/> : start===3 ? <FailurePage/>: null
+         : start===2? <SuccessPage setstart={setstart}/> : start===3 ? <FailurePage setstart={setstart}/>: null
         }
         
       

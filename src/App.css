@@ -184,14 +184,64 @@ li:hover{
     width: 100%;
     color: white;
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     justify-content: center;
     align-items: center;
+
+    & button{
+        height: 40px;
+        width: 150px;
+        background: rgb(78, 127, 78);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 23px;
+        gap: 10px;
+        border: none;
+        border-radius: 5px;
+        transform: scale(1);
+        transition: all 350ms ease;
+    }
+
+    & button:hover{
+        background-color: green;
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: all 350ms ease;
+    }
 }
 .FailurePage{
     height: 100%;
     width: 100%;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+
+    & button{
+        height: 40px;
+        width: 150px;
+        background: rgb(78, 127, 78);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 23px;
+        gap: 10px;
+        border: none;
+        border-radius: 5px;
+        transform: scale(1);
+        transition: all 350ms ease;
+    }
+
+    & button:hover{
+        background-color: green;
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: all 350ms ease;
+    }
 }
