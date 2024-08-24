@@ -6,6 +6,7 @@ import WelcomePage from './WelcomePage'
 import Lives from './components/Lives'
 import SuccessPage from './components/SuccessPage'
 import FailurePage from './components/FailurePage'
+import { IoMdArrowBack } from 'react-icons/io'
 
 const App = () => {
   const [start, setstart] = useState(0)
@@ -131,8 +132,12 @@ const App = () => {
     <div className='MainBody'>
 
       <div className='Wrapper'>
+        
         {
           start ===1?<> <div className="LettersInputed">
+            <div className="up">
+          <button onClick={()=>setstart(0)}><IoMdArrowBack/> Back</button>
+        </div>
           <div className="LettersInputedHolder">
           {
             words.map((a, i)=>(
